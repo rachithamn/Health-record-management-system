@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('purple.jpg'); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Add transition */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease; /* Add transition */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    transition: all 0.3s ease; /* Add transition */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    transition: all 0.3s ease; /* Add transition */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Add transition */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Add scale effect on hover */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 20px;
+    }
+}

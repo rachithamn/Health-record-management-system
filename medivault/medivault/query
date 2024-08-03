@@ -1,0 +1,6 @@
+ $sql = "SELECT d.DiagnosisDescription, m.Name AS MedicationName, m.Dosage, m.Frequency 
+                FROM Symptoms s
+                INNER JOIN Diagnoses d ON s.SymptomID = d.SymptomID
+                INNER JOIN Medications m ON d.DiagnosisID = m.DiagnosisID
+                WHERE s.Name LIKE '%$symptom%'";
+        $result = mysqli_query($conn, $sql);

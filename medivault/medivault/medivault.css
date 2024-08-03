@@ -1,0 +1,44 @@
+/* Reset default styles */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Style the logo */
+.logo {
+  float: left;
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 100px; /* Adjust width as needed */
+  height: auto;
+}
+
+/* Style the navigation menu */
+.nav-links {
+  float: right;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+.nav-links li:last-child {
+  margin-right: 0; /* Remove margin for the last menu item */
+}
+
+.nav-links li a {
+  color:   #5483B3; /* Change color as needed */
+  text-decoration: none;
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 10px 15px; /* Adjust padding as needed */
+}
+
+.nav-links li a:hover {
+  background-color:#7DA0CA; /* Change hover color as needed */
+}
+
+

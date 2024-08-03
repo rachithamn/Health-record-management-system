@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Symptom, Diagnosis, and Medication</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url('Wallpaper for iphone.jpeg'); /* Replace 'background_image.jpg' with the path to your background image */
+            background-size: cover;
+    background-position: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.3); 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="submit"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: #333;
+        }
+        </style>
+    </style>
+</head>
+<body>
+    <p><a href="show_d_s_m.php" >Click Here To View Your Previous Symptom, Diagnosis, and Medication </a></p>
+    <h2>Add Symptom, Diagnosis, and Medication</h2>
+    <form action="add_data.php" method="post">
+        <!-- Input fields for Symptom -->
+        <!-- Omitting symptom_id as it will auto-increment in the database -->
+        <label for="symptom_name">Symptom Name:</label><br>
+        <input type="text" id="symptom_name" name="symptom_name" required><br>
+
+        <label for="symptom_description">Symptom Description:</label><br>
+        <textarea id="symptom_description" name="symptom_description" required></textarea><br><br>
+
+        <!-- Input fields for Diagnosis -->
+        <!-- Omitting diagnosis_id as it will auto-increment in the database -->
+<label for="date"> Date of diagnoses:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="diagnosis_description">Diagnosis Description:</label><br>
+        <textarea id="diagnosis_description" name="diagnosis_description" required></textarea><br><br>
+
+        <!-- Input fields for Medication -->
+        <!-- Omitting medication_id as it will auto-increment in the database -->
+        <label for="medication_name">Medication Name:</label><br>
+        <input type="text" id="medication_name" name="medication_name" required><br>
+
+        <label for="dosage">Dosage:</label><br>
+        <input type="text" id="dosage" name="dosage" required><br>
+
+        <label for="frequency">Frequency:</label><br>
+        <input type="text" id="frequency" name="frequency" required><br><br>
+
+        <!-- Input fields for Medication Start and End Date -->
+        <label for="start_date">Start Date:</label><br>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="end_date">End Date:</label><br>
+        <input type="date" id="end_date" name="end_date" required><br><br>
+
+        <input type="submit" value="Submit" >
+    </form>
+</body>
+</html>
